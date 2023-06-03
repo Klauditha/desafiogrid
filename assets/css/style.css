@@ -41,12 +41,42 @@
     padding: 10px;
     font-size: 24px;
 }
-.sidebar_title{
+.sidebar_item{
     font-size: 16px;
 }
 
 .main{
     grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(2 , 230px);
+    gap:10px;
+    column-gap:30px;
+}
+
+.main_product{
+    display: flex;
+    align-items: center;
+    border: 2px solid #be5e5e;
+    flex-direction:column;
+}
+.main_product_img img{
+    align-self: center;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.main_product_title{
+
+}
+
+.main_product_price{
+
+}
+
+.main_product_buy{
+    background-color: #be5e5e;
+    
 }
 
 .footer{
