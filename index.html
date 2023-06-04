@@ -8,21 +8,43 @@
     <title>Desafio Grid - E-commerce</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="https://kit.fontawesome.com/a6a42315af.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&family=Roboto:wght@100;300;400;500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <div class="header">
-            <h1>Mi Ecommerce</h1>
+            <div>
+                <h1>Mi Ecommerce - Yours Clothes</h1>
+            </div>
         </div>
         <div class="sidebar">
-            <div class="sidebar_title"><p>Categoria</p></div>
-            <div class="sidebar_item">Item1</div>
-            <div class="sidebar_item">Item1</div>
-            <div class="sidebar_item">Item1</div>
-            <div class="sidebar_item"></div>
+            <div class="sidebar_title">
+                <p>Categoria</p>
+            </div>
+            <div class="sidebar_item">
+                <div class="sidebar_item_text">Chaquetas</div>
+                <div class="sidebar_item_count">(2)</div>
+            </div>
+            <div class="sidebar_item">
+                <div class="sidebar_item_text">Chalecos</div>
+                <div class="sidebar_item_count">(1)</div>
+            </div>
+            <div class="sidebar_item">
+                <div class="sidebar_item_text">Pantalon</div>
+                <div class="sidebar_item_count">(1)</div>
+            </div>
+            <div class="sidebar_item">
+                <div class="sidebar_item_text">Zapatos</div>
+                <div class="sidebar_item_count">(0)</div>
+            </div>
         </div>
         <div class="main">
+            <!-- product 1-->
             <div class="main_product">
                 <div class="main_product_img">
                     <img src="./assets/img/01_chaqueta.png" alt="Abrigo Aurora Mustard" />
@@ -30,39 +52,68 @@
                 <div class="main_product_title">
                     <p>Abrigo Aurora Mustard</p>
                 </div>
-                <div class="main_product_price"><p>$ 169.990</p></div>
-                <div class="main_product_buy">Comprar</div>
-            </div>
-            <div class="main_product">
-                <div class="main_product_img">
-                    <img src="./assets/img/01_chaqueta.png" alt="Abrigo Aurora Mustard" />
+                <div class="main_product_price">
+                    <p>$ 169.990</p>
                 </div>
-                <div class="main_product_title">
-                    <p>Abrigo Aurora Mustard</p>
-                </div>
-                <div class="main_product_price"><p>$ 169.990</p></div>
-                <div class="main_product_buy">Comprar</div>
-            </div>
-            <div class="main_product">
-                <div class="main_product_img">
-                    <img src="./assets/img/01_chaqueta.png" alt="Abrigo Aurora Mustard" />
-                </div>
-                <div class="main_product_title">
-                    <p>Abrigo Aurora Mustard</p>
-                </div>
-                <div class="main_product_price"><p>$ 169.990</p></div>
-                <div class="main_product_buy">Comprar</div>
-            </div>
-            <div class="main_product">
-                <div class="main_product_img">
-                    <img src="./assets/img/01_chaqueta.png" alt="Abrigo Aurora Mustard" />
-                </div>
-                <div class="main_product_title">
-                    <p>Abrigo Aurora Mustard</p>
-                </div>
-                <div class="main_product_price"><p>$ 169.990</p></div>
                 <div class="main_product_buy">
-                    <p>Comprar</p></div>
+                    <button type="button">Comprar</button>
+                </div>
+            </div>
+            <!-- product 2-->
+            <div class="main_product">
+                <div class="main_product_img">
+                    <img src="./assets/img/02_chaqueta.png" alt="Chaqueta Jack cuero" />
+                </div>
+                <div class="main_product_title">
+                    <p>Chaqueta Jack cuero</p>
+                </div>
+                <div class="main_product_price">
+                    <p>$ 54.990</p>
+                </div>
+                <div class="main_product_buy"><button type="button">Comprar</button></div>
+            </div>
+            <!-- product 3-->
+            <div class="main_product">
+                <div class="main_product_img">
+                    <img src="./assets/img/03_chaleco.png" alt="Cárdigan en tejido acanalado" />
+                </div>
+                <div class="main_product_title">
+                    <p>Cárdigan en tejido acanalado</p>
+                </div>
+                <div class="main_product_price">
+                    <p>$ 18.990</p>
+                </div>
+                <div class="main_product_buy"><button type="button">Comprar</button></div>
+            </div>
+            <!-- product 4-->
+            <div class="main_product">
+                <div class="main_product_img">
+                    <img src="./assets/img/04_pantalon.png" alt="Pantalon HW Nahuel" />
+                </div>
+                <div class="main_product_title">
+                    <p>Pantalon HW Nahuel</p>
+                </div>
+                <div class="main_product_price">
+                    <p>$ 49.900</p>
+                </div>
+                <div class="main_product_buy">
+                    <button type="button">Comprar</button>
+                </div>
+            </div>
+            <!-- product 5-->
+            <div class="main_product">
+                <div class="main_product_img">
+                    <img src="./assets/img/04_pantalon.png" alt="Pantalon HW Nahuel" />
+                </div>
+                <div class="main_product_title">
+                    <p>Pantalon HW Nahuel</p>
+                </div>
+                <div class="main_product_price">
+                    <p>$ 49.900</p>
+                </div>
+                <div class="main_product_buy">
+                    <button type="button">Comprar</button>
+                </div>
             </div>
         </div>
         <div class="footer">

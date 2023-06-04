@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
    /* max-width: 1366px;
     max-height: 800px;*/
-   
 }
 .container{
     height: 600px;
@@ -12,7 +12,7 @@
     max-height: 600px;
     max-width: 1300px;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 2fr 8fr 1fr;
     grid-template-areas:
     "header header"
@@ -22,14 +22,18 @@
 
 .header {
     grid-area: header;
-    background-color: rebeccapurple;
+    background-color: #444749;
     border: 1px solid;
     text-align: center;
+    color:#ffffff;
 }
-
+.header div h1 {
+    padding-top: 20px;
+    font-weight:300;
+}
 .sidebar{
     grid-area: sidebar;
-    background-color: tomato;
+    background-color: #B3E5FC;
     display: flex;
     flex-direction:column;
     justify-content: flex-start;
@@ -43,26 +47,38 @@
 }
 .sidebar_item{
     font-size: 16px;
+    display: flex;
+    flex-direction: row;
 }
 
+.sidebar_item_title{
+    font-weight: 500;
+}
+.sidebar_item_text{
+    font-weight: 500;
+}
+.sidebar_item_count{
+    font-weight: 300;
+    padding-left: 10px;
+}
 .main{
     grid-area: main;
     display: grid;
-    grid-template-columns: repeat(3 , 1fr);
+    grid-template-columns: repeat(4 , 1fr);
     grid-template-rows: repeat(2 , 230px);
     gap:10px;
-    column-gap:30px;
+    column-gap:20px;
 }
 
 .main_product{
     display: flex;
     align-items: center;
-    border: 2px solid #be5e5e;
+    border: 2px solid #757575;
     flex-direction:column;
 }
 .main_product_img img{
     align-self: center;
-    height: 150px;
+    height: 100px;
     border-radius: 5px;
 }
 
@@ -73,12 +89,27 @@
 .main_product_price{
 
 }
-
 .main_product_buy{
-    background-color: #be5e5e;
     
 }
+.main_product_buy button{
+    background-color: #2395c2;
+    color: #ffffff;
+    border-radius: 10px;
+    border:0;
+    margin-top: 20px;
+    width: 150px;
+    padding: 10px;
+}
+.main_product_buy button:hover{
+    background-color: #85b1c2;
+    color: #ffffff;
+}
 
+.main_product_buy button:focus{
+    background-color: #bec1bb;
+    color: #000000;
+}
 .footer{
     grid-area: footer;
     background-color: rgb(198, 180, 215);
